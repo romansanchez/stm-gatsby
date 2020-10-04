@@ -37,9 +37,8 @@ const Layout = ({ children }) => {
         <footer style={{
           marginTop: `2rem`
         }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          © {new Date().getFullYear()} Southern Tire Masters | 550 Highway 19/41, Hampton, GA 30228 | 
+          IG <a href="https://www.instagram.com/southerntiremasters/">@southerntiremasters</a>
         </footer>
       </div>
     </>

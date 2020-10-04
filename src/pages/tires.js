@@ -2,17 +2,17 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container } from 'theme-ui'
-import { Tireconnect } from '../components/tireconnect';
 
-const IndexPage = () => (
+const TiresPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Tires" />
+    <h1>Tires</h1>
     <Container
       p={4}
       bg='muted'>
-      Centered container
+      Content
     </Container>
   </Layout>
 )
 
-export default IndexPage
+export default TiresPage

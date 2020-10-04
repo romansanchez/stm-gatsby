@@ -1,11 +1,12 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { NavLink, Flex } from 'theme-ui'
+import Logo from '../images/southern-tire-masters-logo.jpg'
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#fff`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -16,17 +17,27 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <img src={Logo} alt="Southern Tire Masters logo" width="150" height="150"/>
+  <Flex as='nav'>
+      <NavLink href='/' p={2}>
+        Home
+      </NavLink>
+      <NavLink href='/tires' p={2}>
+        Tires
+      </NavLink>
+      <NavLink href='/wheels' p={2}>
+        Wheels
+      </NavLink>
+      <NavLink href='/services' p={2}>
+        Services
+      </NavLink>
+      <NavLink href='/financing' p={2}>
+        Financing
+      </NavLink>
+      <NavLink href='/contact' p={2}>
+        Contact
+      </NavLink>
+    </Flex>
     </div>
   </header>
 )
